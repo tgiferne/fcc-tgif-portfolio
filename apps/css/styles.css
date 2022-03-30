@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F2F4F3;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #0A0908;
+    padding: 10px;
+    z-index: 1;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration-line: none;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: red;
+    transition: 250ms ease-in-out;
+}
+
+section {
+    padding: 40px;
+}
+
+#welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+#welcome-section::after {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+#welcome-section * {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+#welcome-section h1 {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+#welcome-section p {
+    font-size: 30px;
+    color: white;
+    margin: 0;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 810px;
+    margin: 20px auto 0;
+}
+
+#projects h2 {
+    display: flex;
+    justify-content: center;
+    
+}
+.project-tile {
+    color: black;
+    max-width: 250px;
+    margin: 10px;
+    text-decoration: none;
+    transition: 300ms ease;
+}
+
+.project-tile p {
+    font-size: 20px;
+    padding-left: 70px;
+}
+
+
+.project-tile img {
+    max-width: 100%;
+    margin: 20px;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+    
+}
+
+#socials {
+    text-align: center;
+    color: #0A0908;
+}
+
+#socials h2 {
+    margin-bottom: 0;
+}
+
+#socials p {
+    margin-top: 0;
+}
+
+.social-ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-ul a {
+    color: #0A0908;
+    font-size: 30px;
+    margin: 0 15px;
+}
+
+footer {
+    background-color: #0A0908;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
